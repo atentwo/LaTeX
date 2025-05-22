@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{aten}
+
+\newcommand{\documenttitle}{aten.sty}
+\newcommand{\authorname}{atentwo}
+
+\begin{document}
+
+\title{\documenttitle}
+\rhead{\textbf{\small \documenttitle}}
+\lhead{\textbf{\small \authorname}}
+\author{\authorname}
+\maketitle
+
+\tableofcontents 
+
+\newpage
+
+\section{Introduction}
+
+\texttt{aten.sty} provides a simple and lightweight solution to make your LaTeX documents prettier.
+
+\subsection{How to Use}
+
+Prepend the following to your tex file:
+\begin{verbatim}
+\documentclass{article}
+\usepackage{aten}
+
+\newcommand{\documenttitle}{DOCUMENT TITLE}
+\newcommand{\authorname}{AUTHOR NAME}
+
+\begin{document}
+
+\title{\documenttitle}
+\rhead{\textbf{\small \documenttitle}}
+\lhead{\textbf{\small \authorname}}
+\author{\authorname}
+\maketitle
+
+\tableofcontents
+\newpage
+
+% Content goes here
+
+\end{document}
+\end{verbatim}
+
+\subsection{Environments}
+
+These are what the environments look like.
+\begin{definition}
+This is a definition.
+\end{definition}
+
+\begin{theorem} \label{thm:oddposintdivby5}
+For odd, positive integers $k$, $1 + 4^k$ is divisible by 5. 
+\end{theorem}
+
+\begin{proof}
+We prove that \( 1 + 4^k \equiv 0 \pmod{5} \) for all odd, positive integers \( k \).
+Note that \( 4 \equiv -1 \pmod{5} \)
+\[
+4^k \equiv (-1)^k \pmod{5}.
+\]
+For odd \( k \), \( (-1)^k = -1 \), so:
+\[
+4^k \equiv -1 \pmod{5} \Rightarrow 1 + 4^k \equiv 1 + (-1) = 0 \pmod{5}.
+\]
+Hence, \( 1 + 4^k \) is divisible by 5 for all odd \( k \in \mathbb{Z}^+ \).
+\end{proof}
+\begin{remark}
+This is a remark.
+\end{remark}
+
+\begin{example} 
+This is an example.
+
+This example has more than one line.
+\end{example}
+
+\subsection{More Features}
+
+Links are supported. \ref{thm:oddposintdivby5} can either be proven through induction on the odd positive integers, or through a modular arithmetic argument.
+
+\section{Conclusion}
+
+Last updated 2025-05-22.
+
+\end{document}
