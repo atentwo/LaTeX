@@ -104,21 +104,22 @@
 
 \renewenvironment{theorem}[1][]{%
   \refstepcounter{theorem}%
-  \begin{tcolorbox}[theoremstyle, title={Theorem \thetheorem\ifx\relax#1\relax\else~(#1)\fi}]%
+  \begin{tcolorbox}[theoremstyle, title={Theorem \thetheorem\ifx\relax#1\relax\else~\normalfont\small(#1\small)\fi}]%
 }{\end{tcolorbox}}
 
 \renewenvironment{definition}[1][]{%
   \refstepcounter{theorem}%
-  \begin{tcolorbox}[definitionstyle, title={Definition \thetheorem\ifx\relax#1\relax\else~(#1)\fi}]%
+  \begin{tcolorbox}[definitionstyle, title={Definition \thetheorem\ifx\relax#1\relax\else~\normalfont\small(#1\small)\fi}]%
 }{\end{tcolorbox}}
 
 \renewenvironment{remark}[1][]{%
   \refstepcounter{theorem}%
-  \begin{tcolorbox}[remarkstyle, title={Remark \thetheorem\ifx\relax#1\relax\else~(#1)\fi}]%
+  \begin{tcolorbox}[examplestyle, title={Remark \thetheorem\ifx\relax#1\relax\else~\normalfont\small(#1\small)\fi}]%
+
 }{\end{tcolorbox}}
 
 \renewenvironment{example}[1][]{%
   \refstepcounter{theorem}%
-  \begin{tcolorbox}[examplestyle, title={Example \thetheorem\ifx\relax#1\relax\else~(#1)\fi}]%
+  \begin{tcolorbox}[examplestyle, title={Example \thetheorem\ifx\relax#1\relax\else~\normalfont\small(#1\small)\fi}]%
 }{\end{tcolorbox}}
 
