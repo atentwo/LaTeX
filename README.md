@@ -30,4 +30,4 @@ When creating a new document, use the following starter:
 
 ## Attribution
 
-Attribution is not needed on the pdfs generated, nor modified versions of the source, although it would be nice. 
+Attribution is not needed on the pdfs generated, although it would be nice. 
